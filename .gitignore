@@ -32,7 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 # keys
-src/main/resources/application.properties
+src/main/resources/application.properties.local
 # Maven
 /target/
 **/target/

@@ -1,0 +1,11 @@
+
+
+spring.application.name=chatbot
+
+telegram.bot.username=YOUR_BOT_USERNAME
+telegram.bot.token=YOUR_TELEGRAM_TOKEN
+
+openai.api.key=YOUR_OPENAI_API_KEY
+
+logging.level.org.telegram=DEBUG
+logging.level.com.telegramai.chatbot=DEBUG
