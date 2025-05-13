@@ -32,7 +32,7 @@ A Spring Boot-based Telegram bot that forwards user messages to OpenAI’s GPT�
 
 ## ⚙️ Configuration
 
-1. Copy and rename `src/main/resources/application.properties.example` to `application.properties`:
+ Copy and rename `src/main/resources/application.properties.example` to `application.properties`:
 
    ```properties
    telegram.bot.username=YOUR_BOT_USERNAME
