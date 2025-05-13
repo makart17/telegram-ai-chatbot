@@ -21,9 +21,10 @@ jobs:
 
       - name: Build & run tests with coverage
         run: |
-         chmod +x mvnw
-         ./mvnw clean test
-
+          chmod +x mvnw
+          ./mvnw clean verify
+      
+      
 
       - name: Upload coverage report to Codecov
         uses: codecov/codecov-action@v5
