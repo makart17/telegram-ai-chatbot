@@ -39,7 +39,7 @@ A Spring Boot-based Telegram bot that forwards user messages to OpenAI’s GPT�
    telegram.bot.token=YOUR_TELEGRAM_TOKEN
    openai.api.key=YOUR_OPENAI_KEY
    ```
-2. **Never commit** your real tokens to Git.
+
 
 ## 🚴‍♂️ Running Locally
 
@@ -80,4 +80,5 @@ chatbot/
 
 ---
 
-Made with 💜 by Artem Makarkin
+Made 
+by Artemiy Makarkin
