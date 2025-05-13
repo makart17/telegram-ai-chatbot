@@ -10,11 +10,13 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.starter.TelegramBotStarterConfiguration;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+
 @SpringBootApplication
 
 public class ChatbotApplication implements CommandLineRunner {
 	private final MyAiBot myAiBot;
-	public ChatbotApplication(MyAiBot myAiBot) { this.myAiBot = myAiBot; }
+	public ChatbotApplication(MyAiBot myAiBot) {
+		this.myAiBot = myAiBot; }
 
 	public static void main(String[] args) {
 		SpringApplication.run(ChatbotApplication.class, args);
