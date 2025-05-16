@@ -26,10 +26,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-m2-
 
-      - name: Build & run tests with coverage
+      - name: Build, test and generate coverage
         run: |
+          # make the Maven wrapper executable
           chmod +x mvnw
-          ./mvnw clean verify
+          # run full build including verify phase (tests + coverage report)
+          ./mvnw clean verify -B
+      
       
       
 
