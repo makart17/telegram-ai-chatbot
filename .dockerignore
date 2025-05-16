@@ -1,0 +1,16 @@
+# Ignore compiled classes and build artifacts
+target/
+
+
+
+
+# Ignore Git and IDE files
+.git/
+.idea/
+*.iml
+
+# Ignore tests
+src/test/
+
+# Documentation
+README.md
