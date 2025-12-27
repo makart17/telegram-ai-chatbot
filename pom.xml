@@ -127,12 +127,10 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.10</version>
 				<executions>
-					<!-- подключаем агент до запуска тестов -->
 					<execution>
 						<id>prepare-agent</id>
 						<goals><goal>prepare-agent</goal></goals>
 					</execution>
-					<!-- генерируем XML-отчёт на этапе verify -->
 					<execution>
 						<id>report</id>
 						<phase>verify</phase>
