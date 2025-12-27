@@ -8,13 +8,13 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 @SpringBootTest
 class ChatbotApplicationTests {
 
-	// <-- Добавляем здесь
+	
 	@MockBean
 	private CommandLineRunner commandLineRunner;
-	// -->
+	
 
 	@Test
 	void contextLoads() {
-		// проверяем, что контекст стартует без ошибок
+		
 	}
 }
