@@ -26,10 +26,7 @@ public class OpenAiClientImpl implements OpenAiClient {
                 .build();
     }
 
-    /**
-     * Sends a chat completion request to OpenAI.
-     * Retries up to 3 times on WebClientResponseException with exponential backoff.
-     */
+
     @Override
     @Retryable(
             value = WebClientResponseException.class,
@@ -51,9 +48,9 @@ public class OpenAiClientImpl implements OpenAiClient {
         return parseResponse(responseJson);
     }
 
-    /**
-     * Fallback method invoked if askGpt still fails after retries.
-     */
+    
+     // Fallback method invoked if askGpt still fails after retries.
+     
     @Recover
     public String recover(WebClientResponseException e, String prompt) {
         if (e.getStatusCode() == HttpStatus.TOO_MANY_REQUESTS) {
@@ -62,9 +59,8 @@ public class OpenAiClientImpl implements OpenAiClient {
         return "Failed to contact OpenAI: " + e.getStatusCode();
     }
 
-    /**
-     * Extracts the assistant's message content from the OpenAI JSON response.
-     */
+    //Extracts the assistant's message content from the OpenAI JSON response.
+    
     private String parseResponse(String json) {
         try {
             var root = new com.fasterxml.jackson.databind.ObjectMapper().readTree(json);
